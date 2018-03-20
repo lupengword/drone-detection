@@ -1,6 +1,8 @@
 # Background Subtraction based Drone detections.
+### Background Subtraction is used to get candidate regions where drones can be. Cascade Classifier is used to detect drone in those region.
 
 ## Steps to use.
+
 
 1. main.cpp - takes video input and using background subtraction gets candidate drone region. Background Subtraction Library can be found here - 
 https://github.com/andrewssobral/bgslibrary  . Follow the instructions to install it.
@@ -9,4 +11,4 @@ https://github.com/andrewssobral/bgslibrary  . Follow the instructions to instal
 opencv_traincascade
 ```
 Followed instruction from https://docs.opencv.org/2.4.13.2/doc/user_guide/ug_traincascade.html
-3.run_classifier.cpp - detect the drones on frames after background subtraction. Cascade Classifier trained by preprocess_train.cpp.
+3. run_classifier.cpp - detect the drones on frames after background subtraction. Cascade Classifier trained by preprocess_train.cpp.
